@@ -1,0 +1,377 @@
+*{
+	list-style: none;
+	padding: 0;margin: 0;
+	font-family: Microsoft Yahei;
+}
+img{
+	border: 0;font-size: 0;
+}
+a{
+	text-decoration: none;
+}
+.player .player-mini{
+	position: fixed;
+	left: 0;right: 0;bottom: 5px;margin: auto;
+	width: 540px;height: 115px;background: #000;
+}
+.player .player-list{
+	position: fixed;
+	left:0;right: 0;bottom: 120px;margin: auto;
+	width: 540px;height: 457px;background: #1B1B1B;
+}
+.player-list .title{
+	width: 540px;height: 52px;
+	background: #000;position: relative;
+}
+.player-list .title .title-left{
+	width: 112px;padding-left: 20px;
+	font-size: 20px;line-height: 52px;color: #fff;
+	background: #262626;float: left;
+	cursor: pointer;
+}
+.player-list .title .title-right{
+	width: 112px;padding-left: 20px;
+	font-size: 14px;line-height: 52px;color: #999;
+	float: right;
+	cursor:pointer;
+}
+.player-list .title .sqlb{
+	position: absolute;top: 5px;right: 5px;
+	width: 20px;height: 20px;
+	background: url(player_bg.png)-269px -97px;
+	cursor:pointer;
+}
+.player-list ul li{
+	width: 500px;height: 24px;
+	margin: 2px 0 3px;padding-left:20px;
+	color: #999;position: relative;
+	cursor: pointer;
+}
+
+.player-list ul li .operate{
+	width: 80px;height: 24px;
+	position: absolute;top:0;right:20px;display: none;
+}
+.player-list ul li:hover .operate{
+	display: block;background: #000;
+}
+.player-list ul li .operate .operate-tu1{
+	width: 15px;height: 15px;margin-top: 4px;margin-left: 3px;
+	float: left;background: green;background: url(player_bg.png);
+	background-position: -1px -127px;
+}
+.player-list ul li .operate .operate-tu1:hover{
+	background-position: -1px -145px;
+}
+.player-list ul li .operate .operate-tu2{
+	width: 15px;height: 15px;margin-top: 4px;margin-left: 5px;
+	float: left;background: green;background: url(player_bg.png);
+	background-position: -16px -127px;
+}
+.player-list ul li .operate .operate-tu2:hover{
+	background-position: -16px -145px;
+}
+.player-list ul li .operate .operate-tu3{
+	width: 15px;height: 15px;margin-top: 4px;margin-left: 5px;
+	float: left;background: green;background: url(player_bg.png);
+	background-position: -32px -127px;
+}
+.player-list ul li .operate .operate-tu3:hover{
+	background-position: -32px -145px;
+}
+.player-list ul li .operate .operate-tu4{
+	width: 15px;height: 15px;margin-top: 4px;margin-left: 5px;
+	float: left;background: green;background: url(player_bg.png);
+	background-position: -48px -127px;
+}
+.player-list ul li .operate .operate-tu4:hover{
+	background-position: -48px -145px;
+}
+.player-list ul li::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.player-list ul li .music-name{
+	width: 254px;line-height: 24px;
+	float: left;
+}
+.player-list ul li .singer-name{
+	width: 180px;line-height: 24px;
+	float: left;
+}
+.player-list ul li .play-time{
+	width: 34px;line-height: 24px;
+	float: left;
+}
+.player-list ul li:hover{
+	background: #000;color: #fff;
+}
+.player-list ul li.bl{
+	color: #0CC65B;
+}
+.player-mini img{
+	width: 90px;height:90px;float: left;
+	margin-left: 10px;margin-top: 12px; 
+}
+
+
+.player .player-mini .caozuo{
+	width: 280px;
+	height: 42px;
+	position: absolute;
+	right: 12px;
+	bottom: 30px;
+}
+.player .player-mini .caozuo .btnleft{
+	width: 36px;
+	height: 28px;
+	background: url(player_bg.png)-70px 0;
+	margin-top: 7px;
+	float: left;
+	cursor: pointer;
+}
+.player .player-mini .caozuo .btnleft:hover{
+	background: url(player_bg.png)-70px -32px;
+}
+.player .player-mini .caozuo .btnon{
+	width: 42px;
+	height: 42px;
+	background: url(player_bg.png)-107px 0;
+	float: left;
+	cursor: pointer;
+	margin-left: 3px;
+}
+.player .player-mini .caozuo .btnon:hover{
+	background: url(player_bg.png)-107px -42px;
+}
+.player .player-mini .caozuo .btnon.pause{
+	background: url(player_bg.png)-292px -88px;
+}
+.player .player-mini .caozuo .btnon.pause:hover{
+	background: url(player_bg.png)-334px -88px;
+}
+
+.player .player-mini .caozuo .btnright{
+	width: 36px;
+	height: 28px;
+	background: url(player_bg.png)-153px 0;
+	margin-top: 7px;
+	float: left;
+	cursor: pointer;
+	margin-left: 3px;
+}
+.player .player-mini .caozuo .btnright:hover{
+	background: url(player_bg.png)-153px -32px;
+}
+.player .player-mini .caozuo .btncircle{
+	width: 31px;
+	height: 28px;
+	background: url(player_bg.png)-226px 0;
+	margin-top: 7px;
+	float: left;
+	cursor: pointer;
+	margin-left: 8px;
+	position: relative;
+}
+.player .player-mini .caozuo .btncircle:hover{
+	background: url(player_bg.png)-226px -32px;
+}
+.player .player-mini .caozuo .btncircle.suiji{
+	background-position: -332px -32px;
+}
+.player .player-mini .caozuo .btncircle.suiji:hover{
+	background-position: -332px -60px;
+}
+.player .player-mini .caozuo .btncircle.liebiao{
+	background-position: -292px -32px;
+}
+.player .player-mini .caozuo .btncircle.liebiao:hover{
+	background-position: -292px -60px;
+}
+.player .player-mini .caozuo .btncircle.danqu{
+	background-position: -256px 0;
+}
+.player .player-mini .caozuo .btncircle.danqu:hover{
+	background-position: -256px -32px;
+}
+.player .player-mini .caozuo .btncircle .bffangshi{
+	width: 29px;height: 88px;
+	position: absolute;left: -2px;bottom: 0;
+	display: none;
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs1{
+	width: 29px;height: 22px;
+	background: url(player_bg.png);
+	background-position: -410px 0; 
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs1:hover{
+	background-position: -410px -22px;
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs2{
+	width: 29px;height: 22px;
+	background: url(player_bg.png);
+	background-position: -410px -44px; 
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs2:hover{
+	background-position: -410px -66px;
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs3{
+	width: 29px;height: 22px;
+	background: url(player_bg.png);
+	background-position: -378px 0; 
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs3:hover{
+	background-position: -378px -22px;
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs4{
+	width: 29px;height: 22px;
+	background: url(player_bg.png);
+	background-position: -378px -44px; 
+}
+.player .player-mini .caozuo .btncircle .bffangshi .bffs4:hover{
+	background-position: -378px -66px;
+}
+
+.player-mini .caozuo .volume .mute{
+	width: 24px;height: 24px;
+	background: url(player_bg.png);
+	background-position: -189px -3px;
+	cursor: pointer;
+}
+.player-mini .caozuo .volume .mute:hover{
+	background-position: -189px -35px;
+}
+.player-mini .caozuo .volume .mute.active{
+	background-position: -152px -63px;
+}
+.player-mini .caozuo .volume .mute.active:hover{
+	background-position: -189px -63px;
+}
+.player-mini .caozuo .volume{
+	float: left;
+	width: 100px;height: 24px;
+	margin-left: 8px;
+	margin-top: 9px;
+	position: relative;
+}
+.player-mini .caozuo .volume .volume-op{
+	width: 71px;height: 11px;
+	position: absolute;right: 0;top:6px;
+	background: url(player_bg.png);
+	background-position: -291px -11px;
+	cursor: pointer;
+}
+.player-mini .caozuo .volume .volume-op .current-volume{
+	position: absolute;
+	width: 71px;height: 11px;
+	background: url(player_bg.png);
+	background-position: -291px 0;
+}
+.player-mini .caozuo .volume .volume-op .indicator{
+	position: absolute;top:0;left:68px;
+	width: 6px;height: 11px;
+	background: url(player_bg.png);
+	background-position: -366px 0;
+}
+.player-mini .caozuo .volume .volume-op.moving .current-volume{
+	background-position: -291px -22px;
+}
+.player-mini .caozuo .volume .volume-op.moving .indicator{
+	background-position: -366px -16px;
+}
+.player-mini .box{
+	height: 104px;padding-top: 10px;
+	float: left;margin-left: 5px;
+}
+
+.player-mini .box .music-name{
+	height: 18px;padding: 2px 0;color: #fff;
+}
+.player-mini .box .singer-name{
+	height: 20px;padding: 2px 0;color: #828282;
+	font-size: 14px;
+
+}
+.player-mini .box .play-time{
+	height: 20px;padding: 2px 0;color: #595956;
+	font-size: 16px;
+}
+.player-mini .box .operate .operate-tu1{
+	width: 15px;height: 15px;margin-top: 4px;margin-left: 3px;
+	float: left;background: green;background: url(player_bg.png);
+	background-position: -1px -127px;
+}
+.player-mini .box .operate .operate-tu1:hover{
+	background-position: -1px -145px;
+}
+.player-mini .box .operate .operate-tu2{
+	width: 15px;height: 15px;margin-top: 4px;margin-left: 5px;
+	float: left;background: green;background: url(player_bg.png);
+	background-position: -16px -127px;
+}
+.player-mini .box .operate .operate-tu2:hover{
+	background-position: -16px -145px;
+}
+.player-mini .diantai{
+width: 75px;height: 20px;float: left;
+background:url(player_bg.png);
+background-position: -453px -55px;
+margin-top: 10px;margin-left: 20px;
+}
+.player-mini .length{
+	width: 47px;height: 28px;float: right;
+	margin-right: 0;
+	background: url(player_bg.png);
+	background-position: -222px -97px;
+}
+.player-mini .length span{
+	width: 24px;height: 28px;float: right;
+	text-align: center;line-height: 28px;
+	font-size: 16px;color: #fff;
+}
+.player-mini .geci{
+	width: 24px;height: 28px;float: right;
+	margin-right: 20px;
+	text-align: center;line-height: 28px;
+	font-size: 16px;color: #757575;
+}
+.player-mini .gequjindu{
+	width: 100%;height: 8px;
+	background: #383838;
+	position: absolute;bottom: 0;
+}
+.player-mini .gequjindu .dangqianjindu{
+	width:0;height: 8px;
+	background: #0CC65B;
+	position: absolute;
+}
+.player-mini .gequjindu .zhishidian{
+	width: 10px;height: 10px;border-radius: 50%;
+	background: #E7E7E7;
+	position: absolute;top:-1px;left:-5px;
+}
+.player-mini .gequjindu .tips{
+	width: 60px;height: 25px;text-align: center;
+	line-height: 25px;
+	position: absolute;top:-40px;left:-30px;
+	border: 1px solid #666;z-index: 100;
+	display: none;
+}
+.player-mini .gequjindu .tips span{
+	width: 100%;height: 100%;background: #383838;
+	position: absolute;left:0;top:0;color: #fff;
+	z-index: 20;
+}
+.player-mini .gequjindu .tips .trigon{
+	width: 10px;height: 10px;background:#383838;
+	position: absolute;left: 50%;margin-left: -6px;
+	bottom: -5px;transform:rotateZ(45deg);
+	border: 1px solid #666;
+}
+
+
+
+
+
+
